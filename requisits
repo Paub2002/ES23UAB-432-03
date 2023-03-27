@@ -1,0 +1,8 @@
+1- 
+
+	Funcionals/Transport 
+		1- Real time traking i emagatzematge del tragecte, aixi com de la distancia recorregudad dels paquets que viatgen amb transportistes. Els que no viatgen amb transportista tambe tenen traking pero no cal calcular la distancia. 
+		2- La plataforma calcula automaticament el pagament a els transportistes, que faran LES BOTIGUES mensualment. 
+		3- El pagament de les botigues es fara: Botiga--> Plataforma--> Transportista. La plataforma NO rep comisio. 
+		4- Hi ha una eina que calcula el cost aproximat del transport per al botiguer optimitzada per a la menor despesa .	
+		5-  		
