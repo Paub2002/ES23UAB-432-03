@@ -1,6 +1,6 @@
-#1 ENCASA 
+# ENCASA 
 
-##2 Plataforma per a petites botiguies i transportistes. 
+## Plataforma per a petites botiguies i transportistes. 
 
 
 Pau Bofill Collado: 1635944
