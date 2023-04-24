@@ -32,6 +32,18 @@ també amb el seu disseny que té que considerar amigable.
 
 
 #### Pagaments
+	- 03-01 | Funcional	: Sistema de pagaments			: La plataforma ha de tenir un sistema integrat de pagament per a que els clients, transportistes i oferent puguin fer les transaccions diferents, i nosaltres cobrar una comisió.
+	- 03-11 | No Funcional	: Métodes de pagament			: Els metodes de pagament que es podrán utilitzar inclouen: Efectiu, Paypal o Targeta de crédit.
+	- 03-02 | Funcional	: Comisió de ENCASA			: Una vegada el pagament entre client i oferent s'hagi completat, haurem pactat amb la botiga una comisió que ens pertoca i l'haurem de substreure dels seus ingressos.
+	- 03-12 | No Funcional  : Ordre d'execució del pagament		: El client efectuará el pagament en el moment d'acceptar una de les ofertes proposades. Efectuará el pagament amb alguna de les opcions proposades i una vegada efectuat la comanda s'efectuará.
+	- 03-04 | Funcional	: Sistema d'abonaments			: Si un client no está d'acord amb l'entrega podrá seleccionar el retorn de pagament dins de l'aplicació per a que se l'hi retorni els diners. Hi haurá un procés extern per avaluar aquests casos.
+	- 03-13 | No Funcional	: Comisió en cad d'abonament		: Independentment de si el client ha demanat l'abonament, ENCASA ja haurá cobrat la comisió. Ja que es responsabilitat del botiguer l'integritat del producte.
+	- 03-14 | No Funcional  : Garantía de la seguretat del client	: El client ha de estar segur de que els seus diners están segurs, i que a qualsevol incidencia amb la seva comanda els podrá tenir si ho considera necessari.
+	- 03-05 | Funcional	: Gestió de la seguretat del botiguer	: Si el botiguer considera que ha sigut ultrajat amb comandes anul·lades o altres, el botiguer podrá presentar una reclamació, que nosaltres gestionarem per métodes externs.
+	- 03-15 | No Funcional  : Gestió de la seguretat del botiguer	: El botiguer es te que sentir protejit sobre les reclamacions del client o cancel·lacions fora de temps.
+
+
+
 #### Transports 
 	- 04-01 | Funcional 	: Real Time traking 1.0			: El viatge que fa el transportista sera monotoritzat i enmagatzemat en temps real per la aplicació i podra ser consultat per a saber a on esta el paquet. // Aquesta informacio sera utilitzada per a calcular els costos de transport.
 	- 04-02 | Funcional 	: Calcul costos transport 1.0		: L'aplicacio s'encarrega de calcular el cost del transport utilitzant la informacio de la distancia del trajecte enmagatzemada. Es calcula sobre el total del mes. 04-01, 04-10. // Nomes aplica a els transportistes contractats a traves de la aplicació.
