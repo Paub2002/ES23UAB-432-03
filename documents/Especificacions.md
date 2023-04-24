@@ -24,8 +24,7 @@
 	- 02-01 | Funcional	: Solicitud de comanda 1.0		: Acció a emprendre dins de la plataforma, mitjançant unes especificacions introduïdes previament.
 	- 02-02 | Funcional	: Presentació d'ofertes 1.0		: La plataforma presentara al client ofertes que li puguin interesar. 
 	- 02-03 | Funcional	: Seleccio de comandes i enviament	:  Acció a emprendre dins de la plataforma, mitjançant unes especificacions introduïdes previament, la plataforma al oferent el que s'ha demanat i fará els pasos necessaris per complir el pagament i enviament segons les preferencies del client
-	- 02-11 | No funcional	: Ui de la comanda amigavle		: Mentre el client faci la seva sol·licitud, es té que sentir cómode no només amb la implementació intuitiva de l'aplicació sinó
-també amb el seu disseny que té que considerar amigable.
+	- 02-11 | No funcional	: Ui de la comanda amigavle		: Mentre el client faci la seva sol·licitud, es té que sentir cómode no només amb la implementació intuitiva de l'aplicació sinó també amb el seu disseny que té que considerar amigable.
 	- 02-04 | Funcional	: Implementació d'un algoritme que identifiqui els productes que vol el client i els compari amb l'estoc de les tendes oferents, per a que no tingui que fer ell/ella la selecció dels productes.
 	- 02-12 | No funcional	: Llistat de presentació d'ofertes	: El format en el que es presentarán les ofertes será: Llistat de productes que li enviem, per cada producte la seva quantitat, preu, marca i altres especificacions. Després esmentarem el día i hora de l'entrega, finalment hi haurá el preu total que inclourá els càrrecs adicionals com transport, iva, etc...
 	- 02-05 | Funcional	: Enviament				: Una vegada la comanda s'ha confirmat per el client, l'oferent ha de rebre una notificació amb les especificacions a complir.
