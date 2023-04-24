@@ -17,6 +17,9 @@
 
 
 #### Botigues i Transportistes 
+	- 01-01 | Funcional	: Plataforma de serveis			: Infraestructura per demanar els serveis oferits. Això inclou un sistema per que els clients demanin una comanda, els botiguers ofereixin els seus productes, i el contacte transportistes que pugin ser avisats si es requereix.
+	- 01-02 | No Funcional	: Crear noves fonts d'ingresos		: Crear noves fonts d'ingressos a la zona mitjançant la feina que oferim als locals com a transportistes, ja que no escollirem empreses de transportistes ni altres grups empresarials.
+
 #### Comandes 
 	- 02-01 | Funcional	: Solicitud de comanda 1.0		: Acció a emprendre dins de la plataforma, mitjançant unes especificacions introduïdes previament.
 	- 02-02 | Funcional	: Presentació d'ofertes 1.0		: La plataforma presentara al client ofertes que li puguin interesar. 
