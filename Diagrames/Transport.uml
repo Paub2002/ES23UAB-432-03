@@ -1,0 +1,31 @@
+@startuml
+
+actor Botiga
+actor Transportista
+actor Client
+database viatges 
+
+
+note right of Botiga : Preparacio dels produces
+
+(Comanda) --> Botiga 
+Botiga --> (Entrega Propia)
+
+Botiga --> [Planificador de rutes]
+
+[Planificador de rutes] --> Transportista : S'afegeix la parada
+
+Transportista --> [Seguiment en temps real]: GPS 
+(Entrega Propia) --> [Seguiment en temps real]:GPS 
+
+
+[Seguiment en temps real] --> Client
+
+[Seguiment en temps real] --> viatges 
+
+viatges --> (calcul viatges mes)
+
+(calcul viatges mes) --> (Pagament al transportista) 
+
+ (Pagament al transportista) --> Transportista
+@enduml
