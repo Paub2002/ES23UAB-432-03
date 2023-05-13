@@ -1,0 +1,17 @@
+@startuml
+actor Client 
+actor Botiga1
+actor Botiga2
+
+Client -> (Llista de productes)
+(Llista de productes) --> (Presentacio d'ofertes)
+(Presentacio d'ofertes) -Left-> (Fer comanda)
+Client -Down-> (Fer comanda)
+
+(Presentacio d'ofertes)<- Botiga1  : "Producte1\nProducte2\nProducte4"  
+(Presentacio d'ofertes)<- Botiga2 : "Producte1\nProducte2\nProducte4"
+
+(Fer comanda)-->(Pagar Comanda + comisio plataforma)
+(Pagar Comanda + comisio plataforma)--> Botiga1 
+(Pagar Comanda + comisio plataforma)--> Botiga2
+@enduml

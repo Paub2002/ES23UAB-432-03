@@ -1,8 +1,7 @@
- #ID: 04-6
- #Type/Category: Funcional/Transport
- #Title: Accés a l'aplicació/plataforma
- #Description: Permet entrar a la plataforma per accedir a les dades tant 
-per a transportistes com per a usuaris. Però poden entrar de maneres 
-diferents, ja que els transportistes han de juntar les dades fiscals.
- #Relations: Totes prèvies
- #Comments:-
+### Casos d'us: 
+
+	0. Usuari fa login (Client/Transportista/Botiguer/Admin)
+	1. Client fa comanda. 
+	2. Botiguer publica un/varis producte/s a la botiga. 
+	3. Botiguer fa una comanda. 
+	4. Transportista rep una comanda
