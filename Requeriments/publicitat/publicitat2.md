@@ -1,5 +1,5 @@
 ### ID: 05-11  
-### Type/Category: No funcional/Publicitat 
+### Type/Category: No funcional/ Restriccions de disseny 
 ### Version: 1.0 
 ### Title: Google ads
 ### Description: El servei utilitzat per a mostrar la publicitat i monetitzar-ho sera google ads. 
