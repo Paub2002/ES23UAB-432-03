@@ -1,0 +1,15 @@
+@startuml
+
+rectangle "ENCASA" as e  
+
+actor Transportista 
+
+Transportista --> (Registre/Login)
+
+(Registre/Login) --> e 
+(Registre/Login) .> [servei de recollida de dades fiscals]
+
+
+
+
+@enduml

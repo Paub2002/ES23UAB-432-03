@@ -1,0 +1,24 @@
+@startuml
+!include <logos/google.puml>
+!include <logos/facebook.puml>
+!include <logos/apple.puml>
+!include <logos/microsoft.puml>
+
+rectangle "<$google>" as g
+rectangle "<$facebook>" as f
+rectangle "<$apple>" as  a
+rectangle "<$microsoft>" as m
+rectangle "ENCASA" as e  
+
+actor Client 
+
+Client --> (Registre/Login)
+(Registre/Login) --> g 
+(Registre/Login) --> a
+(Registre/Login) --> f 
+(Registre/Login) --> m 
+(Registre/Login) --> e 
+
+
+
+@enduml
