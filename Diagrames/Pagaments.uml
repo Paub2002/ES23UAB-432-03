@@ -1,0 +1,19 @@
+@startuml
+!include <logos/paypal.puml>
+!include <logos/visa.puml>
+actor Client 
+actor Botiga 
+package "Opcions de Pagament" as OP {
+rectangle "<$paypal>" as p
+usecase "Efectiu" as UC2
+rectangle "<$visa>" as v
+}
+
+
+Botiga --> OP : "Proporciona: "
+
+Client --> (Pagar Comanda)
+OP -Left-> (Pagar Comanda) : <include> 
+
+
+@enduml
