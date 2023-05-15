@@ -1,0 +1,23 @@
+@startuml
+actor Clients
+actor Botigues
+actor Encasa 
+actor Transportistes
+
+Clients --> (Plataforma/App): Llista de productes
+Encasa --> (Plataforma/App)
+
+Botigues -> (Plataforma/App): "Producte1\n Producte2\n"
+Transportistes --> (Plataforma/App): Disponibilitat
+(Plataforma/App) --> (Comanda)
+
+(Comanda) --> Transportistes : Ordres
+(Comanda) --> Botigues : Ordres
+(Comanda) --> (Seguiment de la comanda)
+
+(Seguiment de la comanda)--> Clients
+(Plataforma/App) -> (Pagaments)
+(Pagaments) --> Botigues
+(Pagaments) --> Transportistes
+(Pagaments) --> Encasa
+@enduml

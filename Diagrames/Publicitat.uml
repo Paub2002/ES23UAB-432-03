@@ -1,0 +1,13 @@
+@startuml
+
+actor Client #white
+actor Proveïdor_Extern #grey
+actor Encasa 
+
+Proveïdor_Extern -> (Selecció banner)
+(Selecció banner) -> (Impresió banner)
+Client -> (Impresió banner) 
+(Impresió banner) -> Proveïdor_Extern: Informació
+Proveïdor_Extern -> Encasa: Comisió
+
+@enduml

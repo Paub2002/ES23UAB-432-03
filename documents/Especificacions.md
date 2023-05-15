@@ -13,7 +13,7 @@
 
 ### Requisits 
 
-		-ID | Funcional	/no funcoinal:  [Title_version](requisit link): Description . [relations ID](relation link) // (Coments)
+		-ID | Funcional	/no funcional:  [Title_version](requisit link): Description . [relations ID](relation link) // (Coments)
 
 
 #### Botigues i Transportistes 
@@ -69,3 +69,4 @@
 		- Transportista
 		- Client
 		- Admin
+		- Proveïdor Extern (Anuncis)
