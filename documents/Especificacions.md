@@ -69,3 +69,4 @@
 		- Transportista
 		- Client
 		- Admin
+		- Proveïdor Extern (Anuncis)
