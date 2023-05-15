@@ -1,0 +1,24 @@
+@startuml
+!include <logos/google.puml>
+!include <logos/google-ads.puml>
+!include <logos/facebook.puml>
+!include <logos/apple.puml>
+!include <logos/microsoft.puml>
+!include <logos/paypal.puml>
+!include <logos/visa.puml>
+
+
+rectangle "<$google>" as g
+rectangle "<$google-ads>" as ga
+rectangle "<$facebook>" as f
+rectangle "<$apple>" as  a
+rectangle "<$paypal>" as p
+rectangle "<$microsoft>" as m
+rectangle "<$visa>" as v
+
+
+actor Client 
+actor ENCASA
+actor Botiga
+actor Transportista
+@enduml
