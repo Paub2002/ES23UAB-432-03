@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+
+actor Client as C
+actor Botiga as B
+
+B --> (Reclamació per\n impagament)
+
+C --> (Reclamació per\n frau del producte)
+
+
+@enduml
