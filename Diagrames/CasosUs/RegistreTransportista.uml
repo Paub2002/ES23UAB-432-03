@@ -1,0 +1,12 @@
+@startuml
+
+actor Transportista 
+
+Transportista --> (Registre)
+
+(Registre) .> [servei de recollida de dades fiscals] :<include>
+
+
+
+
+@enduml

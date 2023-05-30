@@ -1,0 +1,17 @@
+@startuml
+
+actor Botiga as B
+
+(Publicar Productes) as p 
+(Actualitzar Cataleg) as c
+(Actualitzar Stock) as s 
+(Accepar comanda)  as acc
+
+B -> p 
+c <.Left. p : <include>
+c <.Left. s : <include>
+B-> s 
+B-> acc 
+acc .Down.> s: <include>
+
+@enduml

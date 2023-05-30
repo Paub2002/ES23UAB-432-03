@@ -1,0 +1,16 @@
+@startuml
+
+actor Transportista as t 
+
+( Login ) as  L 
+(Recuperar credencials) as R 
+[server de recollida de dades fiscals] as f 
+
+t-Up-> L 
+t-Down-> R 
+R .> f : <include> 
+
+
+
+
+@enduml

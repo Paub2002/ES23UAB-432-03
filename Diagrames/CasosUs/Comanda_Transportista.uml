@@ -1,0 +1,21 @@
+@startuml
+
+actor Transportista as t
+
+
+database comandes as c 
+database rutes as r 
+
+
+(acceptar Comanda) as a 
+(Compartir Ubicacio) as g 
+(Consultar viatges i remuneracio) as con
+
+t -Up-> a 
+a .> g :<include>
+a .> c : uses
+g .> r : stores 
+t -> con
+con .> r : uses 
+
+@enduml

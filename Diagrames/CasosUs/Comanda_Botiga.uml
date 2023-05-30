@@ -1,0 +1,17 @@
+@startuml
+
+actor Botiga as b 
+
+(acceptar comanda ) as c
+(seleccionar transport) as s 
+(demanar transportista) as d 
+(transport propi) as t 
+
+b -> c 
+c.> s 
+s-Down->d 
+s-Up->t 
+
+
+@enduml
+

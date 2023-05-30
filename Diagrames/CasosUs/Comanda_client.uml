@@ -1,0 +1,10 @@
+@startuml
+actor Client 
+
+Client -> (Seleccionar productes)
+(Seleccionar productes) <. (Presentacio d'ofertes) : <include>
+Client -Down-> (Fer comanda)
+
+
+(Fer comanda)-->(Pagar Comanda + comisio plataforma)
+@enduml

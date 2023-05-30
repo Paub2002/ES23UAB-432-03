@@ -12,12 +12,12 @@ rectangle "ENCASA" as e
 
 actor Client 
 
-Client --> (Registre/Login)
-(Registre/Login) --> g 
-(Registre/Login) --> a
-(Registre/Login) --> f 
-(Registre/Login) --> m 
-(Registre/Login) --> e 
+Client --> (Registre)
+(Registre) --> g 
+(Registre) --> a
+(Registre) --> f 
+(Registre) --> m 
+(Registre) --> e 
 
 
 
