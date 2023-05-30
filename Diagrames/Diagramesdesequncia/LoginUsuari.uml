@@ -1,0 +1,12 @@
+@startuml
+actor Client as c 
+control "Gestor D'usuars" as g
+database Users as u 
+
+c -> g : Login 
+g-> u : comprovaUsuari()
+u -> g : bool 
+
+
+
+@enduml
