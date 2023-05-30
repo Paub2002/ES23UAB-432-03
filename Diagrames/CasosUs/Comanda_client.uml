@@ -4,7 +4,7 @@ actor Client
 Client -> (Seleccionar productes)
 (Seleccionar productes) <. (Presentacio d'ofertes) : <include>
 Client -Down-> (Fer comanda)
-
+(Seleccionar productes)->(Fer comanda)
 
 (Fer comanda)-->(Pagar Comanda + comisio plataforma)
 @enduml

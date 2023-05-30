@@ -1,0 +1,17 @@
+@startuml
+
+actor Botiga as B  
+boundary "Gestor Ordres" as Go
+control  "Gestor de comandes" as G
+database ComandaDB as db 
+
+B -> Go : OrdresPendents()
+Go -> G : ComandesPerAssignar()
+G -> db : Comandes where assigned ==false
+db-> G 
+G-> Go : list<Comanda>
+
+B -> Go : acceptarOrdre(Comanda C)
+Go-> G : AssignarComanda(Comanda C)
+G -> db : assigned == true 
+@enduml
