@@ -1,0 +1,15 @@
+@startuml
+actor Botiga as B  
+boundary botiguerApp as A
+control GestorStocks as g 
+database ProductsDB as db 
+
+B -> A : Actualitza stock
+A -> g: Afegeix/EsborraProducte()
+g -> db: sqlQuery
+g-> db: getStock()
+g -> A: Operation Successful/failed
+
+
+@enduml
+
