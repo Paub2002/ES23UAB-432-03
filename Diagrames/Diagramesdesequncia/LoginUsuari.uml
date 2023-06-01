@@ -1,11 +1,14 @@
 @startuml
 actor Client as c 
+boundary clientApp as a 
 control "Gestor D'usuars" as g
 database Users as u 
 
-c -> g : Login 
-g-> u : comprovaUsuari()
-u -> g : bool 
+c -> a : Login 
+a -> g : comprovaUsuari()
+g-> u  : sql request 
+u -> g : bool
+g -> a : Usuari Correcte/Incorrecte 
 
 
 
