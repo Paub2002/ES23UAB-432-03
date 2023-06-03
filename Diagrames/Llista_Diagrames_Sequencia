@@ -1,24 +1,24 @@
 Diagrames: 
-Acceptar comanda (botiga) 
-Seleccionar transport
+Acceptar comanda (botiga) -> DONE  
+Seleccionar transport 
 	Demanar transportista
 	transport propi
 Acceptar comanda (transportista)
 Compartir Ubicacio
-Consultar viatges i remuneracio
-Seleccionar Productes
-Presentacio d'ofertes
-Fer comanda 
-Pagar Comanda 
+Consultar viatges i remuneracio -> DONE  
+Seleccionar Productes -> DONE 
+Presentacio d'ofertes -> DONE 
+Fer comanda -> DONE 
+Pagar Comanda -> DONE 
 Login (Transportista)
 Registre (Transportista)
 Recuperar credencials 
 servei de recollida de dades fiscals
-Login (Usuari)
+Login (Usuari) -> DONE 
 Registre(Usuari)
 Publicar Productes
 Actualitzar cataleg
-Actualitzar stock
+Actualitzar stock -> DONE 
 Acceptar comanda (Botiga)
 Seleccio banner
 Imprimir banner
