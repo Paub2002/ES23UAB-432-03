@@ -1,0 +1,32 @@
+@startuml
+actor Client as c
+boundary appClient as a 
+control Gestor_Productes as g 
+control GPS as GP 
+entity Botiga as b 
+entity Producte as p
+
+c -> a: Veure ofertes 
+activate a 
+a -> g: getOfertes(Client c )
+activate g 
+g -> GP: getBotigues(Posicio c.ubicacio)
+activate GP 
+GP -> g: llista<Botigues>
+deactivate GP 
+loop for Botiga in llista 
+	g -> b : getStock()
+	activate b
+	b -> g : llista<producte>
+	deactivate b 
+end
+loop for producte in llista
+	g -> p : isOferta()
+	activate p
+	p -> g : bool 
+	deactivate p 
+end 
+g-> a: Llista<Ofertes>
+deactivate g 
+deactivate a
+@enduml

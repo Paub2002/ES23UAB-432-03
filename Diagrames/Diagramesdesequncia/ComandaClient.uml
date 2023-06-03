@@ -1,0 +1,28 @@
+@startuml
+actor Client as c 
+boundary appClient as a 
+control Gestor_Productes  as g 
+control gestor_comandes as gc 
+entity producte as p 
+
+loop 
+	c -> a : Seleccionar producte
+	activate a 
+	c -> a : n unitats 
+	a -> g : reservaProducte(Producte, Unitats)
+	activate g 
+	g -> p : reserva(Unitats n)
+	activate p 
+	p -> g : bool 
+	deactivate p 
+	g -> a : bool 
+	deactivate g 
+end 
+c -> a : Finalitza comanda
+a -> gc : novaComanda(Llista<Productes>)
+activate gc
+gc -> a : cookie seguiment comanda
+deactivate gc 
+deactivate a 
+
+@enduml

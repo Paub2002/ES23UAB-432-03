@@ -1,0 +1,42 @@
+@startuml
+
+actor Client as  c
+boundary appClient as a 
+control gestorPagaments as g 
+control gestorClients as gc
+entity botiga as b 
+entity client as cli
+
+c -> a : Pagar comanda 
+activate a 
+a -> g : MetodesPagament( botiga b  )
+activate g 
+g -> b : getMetodesPagament()
+activate b 
+b -> g : llista<bool>
+deactivate b 
+g -> a : llista<MetodesPag>
+c -> a : escull entre les opcions
+a -> g : pagament(Metode, client)
+g -> gc: getDadesPagamentClient(client)
+activate gc
+gc -> cli : getPagament()
+activate cli
+cli -> gc: dadesPagament
+deactivate cli
+gc -> g: dadesPagament
+deactivate gc
+g -> g : Processa pagament 
+g -> a : pagament Succesful/unsuccesful
+deactivate g 
+deactivate a 
+
+
+
+
+
+
+
+
+@enduml
+

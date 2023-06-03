@@ -1,0 +1,22 @@
+@startuml
+actor Transportista as t
+boundary appTransportista as a  
+control   GPS as g 
+entity viatge as v 
+
+
+t -> a : Veure viatges realitzats
+activate a 
+a -> g : getViatges(TransportistaID)
+activate g 
+g -> v : getTransportista()
+activate v 
+v -> g : bool
+deactivate v 
+g -> a : Llista<Rutes>
+deactivate g 
+a -> a : CalculaPagaments(Llista<Rutes>)
+deactivate a 
+
+@enduml
+
