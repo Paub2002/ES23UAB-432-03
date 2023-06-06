@@ -2,13 +2,20 @@
 actor Botiga as B  
 boundary botiguerApp as A
 control GestorStocks as g 
-database ProductsDB as db 
+entity product as db 
 
 B -> A : Actualitza stock
+activate A 
 A -> g: Afegeix/EsborraProducte()
-g -> db: sqlQuery
-g-> db: getStock()
-g -> A: Operation Successful/failed
+activate g 
+g -> db: addNprods(singed N)
+activate db 
+db-> g: int productsLeft
+deactivate db 
+g -> A: int productsLeft
+deactivate g 
+A -> A: ActualitzaInfoStock()
+deactivate A 
 
 
 @enduml

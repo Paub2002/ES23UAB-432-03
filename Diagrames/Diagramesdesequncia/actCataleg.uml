@@ -1,0 +1,21 @@
+@startuml
+actor Botiguer as b
+boundary botiguerApp as a 
+control productManager as m 
+entity product as p
+
+b -> a : Afegeix Producte 
+activate a
+a -> m : newProduct()
+activate m 
+m -> p : Product() 
+activate p 
+p -> m : bool ok 
+deactivate p 
+m -> a : succesful/error
+deactivate m 
+deactivate a 
+
+
+@enduml
+
