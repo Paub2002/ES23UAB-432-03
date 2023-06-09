@@ -1,0 +1,24 @@
+@startuml
+title Compartir Ubicació
+
+actor Transportista
+
+actor Client
+
+boundary BD_Interface
+control BD_gestor
+database BD
+
+
+Transportista ->BD_Interface:EmetPosicio()
+BD_Interface ->BD_gestor: validateRoute()
+BD_gestor->BD : GuardaPosicio
+Client  ->BD_Interface : ComandaPosition_Request()
+BD_Interface ->BD_gestor : comprovaComanda()
+BD_gestor ->BD :SQL_request
+BD -->BD_gestor :return
+BD_gestor -->BD_Interface : Posicio
+
+
+
+@enduml
