@@ -1,8 +1,8 @@
 Diagrames: 
 Acceptar comanda (botiga) -> DONE  
-Seleccionar transport 
-	Demanar transportista
-	transport propi
+Seleccionar transport -> DONE 
+	Demanar transportista -> DONE 
+	transport propi -> DONE 
 Acceptar comanda (transportista) -> DONE  
 Compartir Ubicacio -> DONE v1
 Consultar viatges i remuneracio -> DONE  
