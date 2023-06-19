@@ -1,0 +1,33 @@
+@startuml
+
+actor Client
+
+
+boundary Interfaç as a
+control "Planificador de rutes" as b
+actor Transportista
+
+
+Client -> a : Demana transportista
+group Succes
+activate a
+a -> b : TransportistaRequest()
+activate b 
+b -> b : CalculTranspotistesDisponibles()
+
+b -> b : SendTransportistaRequest()
+Transportista -> b : Accepta comanda
+end
+
+group Error
+
+a -> b : TransportistaRequest()
+
+b -> b : CalculTranspotistesDisponibles()
+b -> b: CallEntregaPropia()
+end
+
+b --> a
+deactivate b
+deactivate a
+@enduml

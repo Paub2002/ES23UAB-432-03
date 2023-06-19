@@ -1,0 +1,51 @@
+@startuml
+
+actor Client
+boundary "Interfaç de comanda" as a 
+control "Gestor de comanda" as b
+control "Planificador de rutes" as c
+
+
+Client -> a : Selecció de comanda
+activate a 
+a -> a: MostrarOpcions()
+group Transportista
+Client -> a : Métode Transportista
+a -> b : TransportistaRequest()
+activate b
+b -> c : TransportistaRequest()
+activate c
+c --> b : Success
+deactivate c
+b --> a : Success
+deactivate b
+alt No hi ha transportista
+a -> b : TransportistaRequest()
+activate b
+b -> c : TransportistaRequest()
+activate c
+c --> b : Error
+deactivate c
+b --> a : Error
+deactivate b
+deactivate a 
+hnote across: La crida a entrega pròpia en cas d'error está ja implementada en el cas que no hi hagi un transportista disponible
+
+
+end
+
+end
+group Entrega Pròpia
+Client -> a : Entrega Pròpia
+activate a 
+a -> b : EntregaPropiaRequest()
+activate b
+b -> c : EntregaPropiaRequest()
+activate c
+c --> b
+deactivate c
+b -->a
+deactivate b
+deactivate a
+end
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+
+actor Client
+boundary Interfaç as a
+control "Gestor de comandes" as b
+database BD_stocks as c
+
+Client -> a : Sol·licitud de comandes
+activate a
+a -> b : OfertesRequest()
+activate b
+b -> c : sql_request
+activate c
+c --> b : 
+deactivate c
+b --> a: Llista d'ofertes
+deactivate b
+Client -> a : Selecció de comanda
+a -> b : ConfirmaComanda()
+deactivate a
+activate b
+b --> b : GeneraOrdreBotiguer()
+ 
+deactivate b
+deactivate a
+@enduml
