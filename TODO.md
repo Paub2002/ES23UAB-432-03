@@ -9,6 +9,19 @@
     3. [x] Listado actores del sistema (Revisar i añadir al documento)
     
     4. [ ] Especificaciones de cada uno de los casos de uso (Revisar i añadir al documento)
+            - Comanda_Botiga
+            - Comanda_Transportista
+            - Comanda_client
+            - LoginTransportista
+            - LoginUsuari
+            - Pagaments
+            - Productes
+            - Publicitat
+            - Reclamacions
+            - RegistreTransportista
+            - RegistreUsuari
+            
+            
 
 - [ ] Documento de diagramas https://uab-my.sharepoint.com/:w:/g/personal/1635944_uab_cat/EY-pDntQZeRElPy9i12nmRABdzieqZ1Hi8ubiag9Gk_k1w?e=amYUBJ
     
