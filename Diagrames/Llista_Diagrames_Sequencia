@@ -3,8 +3,8 @@ Acceptar comanda (botiga) -> DONE
 Seleccionar transport 
 	Demanar transportista
 	transport propi
-Acceptar comanda (transportista)
-Compartir Ubicacio
+Acceptar comanda (transportista) -> DONE  
+Compartir Ubicacio -> DONE v1
 Consultar viatges i remuneracio -> DONE  
 Seleccionar Productes -> DONE 
 Presentacio d'ofertes -> DONE 
@@ -19,7 +19,7 @@ Registre(Usuari)
 Publicar Productes
 Actualitzar cataleg
 Actualitzar stock -> DONE 
-Acceptar comanda (Botiga)
+Acceptar comanda (Botiga) -> DONE  
 Seleccio banner
 Imprimir banner
 Reclamacio per impagament
