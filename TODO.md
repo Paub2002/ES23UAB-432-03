@@ -2,11 +2,11 @@
 
 - [ ] Documento de especificaciones del problema con versiones finales de lo siguiente: https://uab-my.sharepoint.com/:w:/g/personal/1635944_uab_cat/EYXbpye5XXxGrXd8HF4AfNEBpdWs_4pWl7DDPH-iqnbMuQ?e=VmRWAJ
     
-    1. [ ] Requisitos funcionales (Revisar i añadir al documento)
+    1. [x] Requisitos funcionales (Revisar i añadir al documento)
     
-    2. [ ] Requisitos no funcionales (Revisar i añadir al documento)
+    2. [x] Requisitos no funcionales (Revisar i añadir al documento)
     
-    3. [ ] Listado actores del sistema (Revisar i añadir al documento)
+    3. [x] Listado actores del sistema (Revisar i añadir al documento)
     
     4. [ ] Especificaciones de cada uno de los casos de uso (Revisar i añadir al documento)
 
