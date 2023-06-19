@@ -1,0 +1,23 @@
+@startuml
+actor Transportista as t  
+boundary TransportApp as app  
+control "Gestor D'usuaris" as g
+control "Gestor Pagaments" as p 
+entity User as u 
+
+t -> app : {Nom , Cognom, edat, mail, direccio}
+activate app 
+app->app : Send_comprovacio_mail(mail)
+deactivate app
+t -> app : confirmation link
+activate app
+app -> g : CreaUsuari()
+activate g 
+g -> u : User()
+activate u
+u -> g : UserID 
+deactivate u
+g -> app 
+app -> app: link servei de recollida dades fiscals 
+
+@enduml

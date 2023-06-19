@@ -1,0 +1,21 @@
+@startuml
+
+actor Transportista as t  
+boundary TrasportApp as a 
+control ApiFiscal as F 
+
+
+t -> a : link servei dades fiscals 
+activate a 
+t -> a : dades Fiscals 
+a -> F : checkDades() 
+activate F 
+F -> F : comprovacio
+F -> a : bool 
+deactivate F 
+deactivate a 
+
+
+
+@enduml
+

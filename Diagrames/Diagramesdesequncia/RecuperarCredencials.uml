@@ -1,0 +1,29 @@
+@startuml
+
+actor User  as u 
+boundary app as a 
+control "Gestor D'usuaris" as g 
+entity user as e
+
+u -> a : Recuperar Credencials 
+activate a 
+a -> a : send_recovery_link()
+deactivate a 
+u -> a : recovery_link
+activate a 
+u -> a : newCreds 
+a -> g : UpdateUserCreds(newCreds)
+activate g
+g -> e : Update()
+activate e 
+e -> g 
+deactivate e 
+g -> a : NewID 
+deactivate g 
+deactivate a 
+
+
+
+
+@enduml
+

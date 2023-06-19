@@ -1,0 +1,15 @@
+@startuml
+actor Transportista as t 
+boundary TransportApp as a 
+control "Gestor D'usuars" as g
+entity User as u 
+
+t -> a : Login 
+a -> g : comprovaUsuari()
+g-> u  : get hash() 
+u -> g : hash
+g -> a : Usuari Correcte/Incorrecte 
+
+
+
+@enduml

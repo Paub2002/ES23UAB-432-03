@@ -1,0 +1,36 @@
+@startuml
+actor Client as c  
+boundary clientApp as app  
+control "Gestor D'usuaris" as g
+control "Gestor Pagaments" as p 
+entity User as u 
+
+c -> app : {Nom , Cognom, edat, mail, direccio}
+activate app 
+app->app : Send_comprovacio_mail(mail)
+deactivate app
+c -> app : confirmation link
+activate app
+app -> g : CreaUsuari()
+activate g 
+g -> u : User()
+activate u
+u -> g : UserID 
+deactivate u
+g -> app 
+deactivate g
+c -> app: {informacio de pagament}
+app -> p : AfegeixMetodePagament(informacioPagament, UserID)
+activate p
+p -> p : ComprovaInformacio()
+p -> u : AfegeixInfoPagament()
+activate u 
+u -> p 
+deactivate u 
+p -> app : Registre Completat
+deactivate app 
+
+
+
+
+@enduml
