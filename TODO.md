@@ -8,17 +8,27 @@
     
     3. [x] Listado actores del sistema (Revisar i añadir al documento)
     
-    4. [ ] Especificaciones de cada uno de los casos de uso (Revisar i añadir al documento)
+    4. [ ] Especificaciones de cada uno de los casos de uso (Revisar i añadir al documento
             - Comanda_Botiga
+            
             - Comanda_Transportista
+            
             - Comanda_client
+            
             - LoginTransportista
+            
             - LoginUsuari
+            
             - Pagaments
+            
             - Productes
+            
             - Publicitat
+            
             - Reclamacions
+            
             - RegistreTransportista
+            
             - RegistreUsuari
             
             
