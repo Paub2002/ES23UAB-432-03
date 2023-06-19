@@ -3,7 +3,7 @@
 actor Client
 boundary Interfaç as a
 control "Gestor de comandes" as b
-database BD_stocks as c
+entity Comanda as c 
 
 Client -> a : Sol·licitud de comandes
 activate a

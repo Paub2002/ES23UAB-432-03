@@ -2,12 +2,12 @@
 actor Client as c 
 boundary clientApp as a 
 control "Gestor D'usuars" as g
-database Users as u 
+entity User as u 
 
 c -> a : Login 
 a -> g : comprovaUsuari()
-g-> u  : sql request 
-u -> g : bool
+g-> u  : get hash() 
+u -> g : hash
 g -> a : Usuari Correcte/Incorrecte 
 
 

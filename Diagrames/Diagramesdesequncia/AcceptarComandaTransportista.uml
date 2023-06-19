@@ -5,7 +5,7 @@ actor Client
 
 boundary Interfaç as a
 control "Planificador de rutes" as b
-actor Transportista
+entity Transportista
 
 
 Client -> a : Demana transportista
