@@ -1,0 +1,30 @@
+@startuml
+
+actor "Client" as u
+boundary "Interfaç de frau" as a 
+control "Gestor de frau" as b
+
+u -> a : Reclamació del servei
+activate a
+a -> b : GeneraIncidencia()
+activate b
+b -->a : 
+deactivate a
+deactivate b
+
+group Retornar els diners
+u -> a : Retornar abonament
+activate a
+a -> b : AbonamentReturn()
+activate b 
+b -> b : ProcesDevolucio()
+group Apelació acceptada
+b --> a : Success
+end
+group Apelació denegada
+b --> a : Denied
+deactivate b
+deactivate a
+end
+end
+@enduml

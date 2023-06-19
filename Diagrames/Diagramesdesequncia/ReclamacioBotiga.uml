@@ -1,0 +1,24 @@
+@startuml
+
+actor "Client" as u
+
+boundary "Interfaç de frau" as a 
+control "Gestor de frau" as b
+actor "Asseguradora" as d
+u -> a : Reclamació d'impagament
+activate a
+a -> b : GeneraIncidencia()
+activate b
+b -> b : AsseguradoraReview()
+group Apelació acceptada
+d -> b  : Devolució
+b-->a :  Mostrar estat d'apelació
+
+end
+group Apelació Denegada
+d -> b : Denegada
+b --> a :Mostrar estat d'apelació
+deactivate b
+deactivate a 
+end
+@enduml
